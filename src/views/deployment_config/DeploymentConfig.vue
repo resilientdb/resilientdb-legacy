@@ -13,7 +13,6 @@
 	import { computed, ref } from "vue";
 
 	const confComponents = [EndpointConfig,  NetworkConfig];
-	const currentConfig = ref(null);
 	const current = ref(0);
 	const deploying = ref(false);
 	const totalSteps = 2;
@@ -34,6 +33,8 @@
 				await useDeploymentStore().deploy();
 				deploying.value = false;
 				// deploy
+		} else {
+			current.value++;
 		}
 	}
 </script>
