@@ -8,9 +8,12 @@
       font-size: 30pt;
     "
   >
-    <iframe src="http://192.18.137.13:9090/targets?search="
-        width="100%" height="110%" frameborder="0" >
-    </iframe>
+
+<div style="display: flex; justify-content: center">
+        <a-button target="_blank" type="primary" style="background-color:blue" href="http://192.18.137.13:9090/targets?search=">
+	  Deployment Status
+        </a-button>
+      </div>
   </div>
 </template>
 
