@@ -61,13 +61,6 @@
 				margin-top: 50px;
 			"
 		>
-		<div class="__item __item--active">
-			<!--<h5 class="__text __text--second">-->
-				<a target="_blank" href="http://192.18.137.13:9090/targets?search=">
-					Nexres Node Status	
-				</a>
-			<!--</h5>-->
-		</div>
 			<a-steps :current="current">
 				<a-step title="Endpoints">
 					<template #icon>

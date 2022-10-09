@@ -70,6 +70,7 @@ export const useDeploymentStore = defineStore("deployment", {
 */
       try {
         const endpointsStore = useEndpointsStore();
+        deploy(endpointsStore.endpoints);
       } catch (e) {
         console.log(e);
       }
