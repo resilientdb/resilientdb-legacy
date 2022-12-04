@@ -10,5 +10,5 @@ cd dist
 git init
 git add -A
 git commit -m 'deploy'
-git push -f git@github.com:nexres/nexres.github.io.git main:nexres-gh-pages
+git push -f git@github.com:nexres/nexres.github.io.git
 cd -
