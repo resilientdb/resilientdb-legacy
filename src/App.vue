@@ -6,7 +6,7 @@
 <template>
 	<div style="width: 100%; display: flex; flex-direction: column; flex: 1">
 		<header-view />
-		<RouterView style="flex: 1; margin-top: 0px" />
+		<RouterView style="flex: 1; margin-top: 30px" />
 	</div>
 </template>
 

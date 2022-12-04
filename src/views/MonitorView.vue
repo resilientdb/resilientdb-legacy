@@ -1,6 +1,9 @@
 <template>
-    <iframe src="http://192.9.224.155:3000/d/-cdKDm9nk/nexres?orgId=1&refresh=5s&kiosk" width=auto height=auto frameborder="0"></iframe>
-    
+
+    <iframe class="myframe"  src="http://localhost:3000/d/-cdKDm9nk/nexres?orgId=1&refresh=5s" width=auto height=auto frameborder="0"></iframe>
+
+
+
 </template>
 
 <script>
@@ -12,7 +15,8 @@
 </script>
 
 <style scoped>
-    .no-margin {
-        margin-top: 10px;
+
+    .myframe{
+        margin-top: 0px !important;
     }
 </style>
