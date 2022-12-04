@@ -4,6 +4,7 @@ import HomeView from "../views/Home/HomeView.vue";
 import BlockExplorer from "../components/explorer/BlockExplorer.vue";
 import Block from "../components/explorer/Block.vue";
 import Transactions from "../components/explorer/Transactions.vue";
+import MonitorView from "../views/MonitorView.vue";
 import {
 	HomeOutlined,
 	DeploymentUnitOutlined,
@@ -36,7 +37,7 @@ const router = createRouter({
 			// route level code-splitting
 			// this generates a separate chunk (About.[hash].js) for this route
 			// which is lazy-loaded when the route is visited.
-			component: () => import("../components/CookingView.vue"),
+			component: MonitorView,
 			props: {
 				icon: MonitorOutlined,
 			},
