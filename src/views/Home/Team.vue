@@ -213,6 +213,63 @@
 		</div>
 		<div class="profile-card">
 			<div class="img">
+				<img src="@/assets/team_img/ManjunathJakaraddi.jpg" />
+			</div>
+			<div class="caption">
+				<h3>Manjunath Jakaraddi</h3>
+				<p>Protocol Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/manjunath-jakaraddi-316957121/"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/RohithRaj.png" />
+			</div>
+			<div class="caption">
+				<h3>Rohith Raj Srinivasan</h3>
+				<p>Backend Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/rohith-raj-s/"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/ApratimShukla.png" />
+			</div>
+			<div class="caption">
+				<h3>Apratim Shukla</h3>
+				<p>Full-Stack Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/apratimshukla6/"
+						><linkedin-outlined
+					/></a>
+					<a href="https://apratim.me/"><global-outlined /></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/PriyalSoni.jpg" />
+			</div>
+			<div class="caption">
+				<h3>Priyal Soni</h3>
+				<p>Backend Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/priyal-soni-150/"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
 				<img src="@/assets/team_img/SeongwooChoi.jpeg" />
 			</div>
 			<div class="caption">
