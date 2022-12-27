@@ -268,34 +268,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="profile-card">
-			<div class="img">
-				<img src="@/assets/team_img/SeongwooChoi.jpeg" />
-			</div>
-			<div class="caption">
-				<h3>Seongwoo Choi</h3>
-				<p>DevOp Support</p>
-				<div class="social-links">
-					<a href="https://www.linkedin.com/in/swchoi1994/"
-						><linkedin-outlined
-					/></a>
-				</div>
-			</div>
-		</div>
-		<div class="profile-card">
-			<div class="img">
-				<img src="@/assets/team_img/TroyInsixiengmay.jpg" />
-			</div>
-			<div class="caption">
-				<h3>Troy Insixiengmay</h3>
-				<p>Mobile DApp Developer</p>
-				<div class="social-links">
-					<a href="https://www.linkedin.com/in/troy-i-a07bb9187/"
-						><linkedin-outlined
-					/></a>
-				</div>
-			</div>
-		</div>
 	</div>
 	<div class="alumni">Distinguished Alumni</div>
 	<div class="main2">
@@ -351,6 +323,34 @@
 				<p>System Engineer</p>
 				<div class="social-links">
 					<a href="https://www.linkedin.com/in/p-shubham1996"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/SeongwooChoi.jpeg" />
+			</div>
+			<div class="caption">
+				<h3>Seongwoo Choi</h3>
+				<p>DevOp Support</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/swchoi1994/"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/TroyInsixiengmay.jpg" />
+			</div>
+			<div class="caption">
+				<h3>Troy Insixiengmay</h3>
+				<p>Mobile DApp Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/troy-i-a07bb9187/"
 						><linkedin-outlined
 					/></a>
 				</div>
