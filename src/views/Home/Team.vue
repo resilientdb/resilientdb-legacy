@@ -268,6 +268,20 @@
 				</div>
 			</div>
 		</div>
+		<div class="profile-card">
+			<div class="img">
+				<img src="@/assets/team_img/kaustubhshete.jpeg" />
+			</div>
+			<div class="caption">
+				<h3>Kaustubh Shete</h3>
+				<p>Full Stack Developer</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/kvshete15/"
+						><linkedin-outlined
+					/></a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="alumni">Distinguished Alumni</div>
 	<div class="main2">
