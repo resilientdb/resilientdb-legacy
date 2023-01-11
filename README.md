@@ -62,3 +62,4 @@ git commit -a
 git push
 ```
 
+### Please make sure you dont change any file out of dist in gh-pages branch ###
