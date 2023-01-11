@@ -103,11 +103,13 @@
 				<img src="@/assets/team_img/dakai.jpg" />
 			</div>
 			<div class="caption">
-				<h3>Kang Dakai</h3>
+				<h3>Dakai Kang</h3>
 				<p>Concurrent Consensus Architect</p>
-				<!-- <div class="social-links">
-					<a href="#"><linkedin-outlined /></a>
-				</div> -->
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/dakai-kang-288451227/"
+						><linkedin-outlined
+					/></a>
+				</div>
 			</div>
 		</div>
 
