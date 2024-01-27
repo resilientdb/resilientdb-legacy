@@ -6346,7 +6346,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
 
 .bg-theme-alt > .sap-text span { background: #10122d; }
 
-.blog { background: #fff; border-radius: 6px; box-shadow: 0 5px 45px 0 rgba(18, 24, 58, 0.08); margin-bottom: 30px; }
+.blog { background: #fff; border-radius: 6px; box-shadow: 0 5px 45px 0 rgba(18, 24, 58, 0.08); margin-bottom: 30px; text-align: center; height: 500px; }
 
 .tc-light .blog { background: #10122d; }
 
