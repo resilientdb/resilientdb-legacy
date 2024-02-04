@@ -7255,6 +7255,7 @@ ul.progress-info { display: flex; justify-content: space-between; }
   width: 100%;
   max-width: 1642px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .inner-wrapper-padding {
   padding: 0 100px;
