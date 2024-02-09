@@ -7830,5 +7830,10 @@ ul.progress-info { display: flex; justify-content: space-between; }
     flex-wrap: wrap;
   }
 }
+
+.location {
+  color: #a2b4d2;
+  font-size: 15px;
+}
 /* END @iO */
 /* END @iO */
