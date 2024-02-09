@@ -260,16 +260,34 @@
                         <div class="row justify-content-center gutter-vr-40px">
                             <div class="col-md-6 col-mb-8">
                                 <div class="single-chart">
-                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".1">Distribution <br>of tokens</h3>
-                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".2">
-                                        <img src="images/dark/e-dark.png" alt="chart">
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".1">with Power-of-Collaboration Consensus in 2022</h3>
+                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".2"> 
+                                        <canvas id="chart1" width="450" height="300"></canvas>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6 col-mb-8">
                                 <div class="single-chart">
-                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".3">Use <br>of proceeds</h3>
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".3">with RingBFT Sharded Consensus in 2021</h3>
                                     <div class="chart animated" data-animate="fadeInUp" data-delay=".4">
+                                        <canvas id="chart2" width="450" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center gutter-vr-40px">
+                            <div class="col-md-6 col-mb-8">
+                                <div class="single-chart">
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".5">With RCC Concurrent Consensus in 2020</h3>
+                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".6">
+                                        <canvas id="chart3" width="450" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-mb-8">
+                                <div class="single-chart">
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".7">With GeoBFT Global Consensus in 2019</h3>
+                                    <div class="chart animated" data-animate="fadeInUp" data-delay="0.8">
                                         <img src="images/dark/f-dark.png" alt="chart">
                                     </div>
                                 </div>
@@ -1794,6 +1812,171 @@
     <script src="assets/js/scripts.js?ver=210"></script>
     <script src="assets/js/charts.js?ver=210"></script>
     <script src="assets/js/charts.js?ver=210"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var ctx = document.getElementById('chart1').getContext('2d');
+
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: ["4", "16", "32", "64", "120"],
+            datasets: [{
+                label: 'Throughput',
+                yAxisID: 'y-throughput',
+                backgroundColor: 'rgb(89, 180, 169)',
+                borderColor: 'rgb(89, 180, 169)',
+                data: [939, 892, 453, 222, 106],
+                fill: false,
+            }, {
+                label: 'Latency',
+                yAxisID: 'y-latency',
+                backgroundColor: 'rgb(255, 87, 51)',
+                borderColor: 'rgb(255, 87, 51)',
+                data: [0.01, 0.07, 0.2, 0.5, 0.99],
+                fill: false,
+            }]
+            },
+            options: {
+            scales: {
+                'y-throughput': {
+                type: 'linear',
+                display: true,
+                position: 'left',
+                title: {
+                    display: true,
+                    text: 'Throughput (KTPS)'
+                }
+                },
+                'y-latency': {
+                type: 'linear',
+                display: true,
+                position: 'right',
+                title: {
+                    display: true,
+                    text: 'Latency (Seconds)'
+                },
+                grid: {
+                    drawOnChartArea: false,
+                },
+                },
+                x: {
+                title: {
+                    display: true,
+                    text: 'Number of Replicas'
+                }
+                }
+            },
+            plugins: {
+                legend: {
+                position: 'top',
+                }
+            }
+            }
+        });
+        });
+    </script>       
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var ctx = document.getElementById('chart2').getContext('2d');
+
+          const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: ["Partitioned Workload", "Low", "Medium", "High", "Extreme"],
+              datasets: [{
+                label: 'Throughput',
+                data: [1200, 254, 196, 167, 81],
+                borderColor: '#59b4a9',
+                backgroundColor: 'rgba(89, 180, 169, 0.5)',
+                yAxisID: 'y',
+              }, {
+                label: 'Latency',
+                data: [3, 6, 7, 6, 7],
+                borderColor: '#FF5733',
+                backgroundColor: 'rgba(255, 87, 51, 0.5)',
+                yAxisID: 'y1',
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  type: 'linear',
+                  display: true,
+                  position: 'left',
+                  title: {
+                    display: true,
+                    text: 'Throughput (KTPS)',
+                  },
+                },
+                y1: {
+                  type: 'linear',
+                  display: true,
+                  position: 'right',
+                  title: {
+                    display: true,
+                    text: 'Latency (Seconds)',
+                  },
+                  grid: {
+                    drawOnChartArea: false,
+                  },
+                }
+              },
+              plugins: {
+                legend: {
+                  position: 'top',
+                }
+              }
+            }
+          });
+        });
+    </script>       
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var ctx = document.getElementById('chart3').getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: ["4", "16", "32", "64", "91"], // X-axis categories
+              datasets: [{
+                label: 'ResilientDB', // First dataset
+                data: [355, 365, 356, 242, 210], // Data for the first dataset
+                borderColor: '#59b4a9', // Line color
+                backgroundColor: 'rgba(89, 180, 169, 0.5)', // Fill color with transparency
+                tension: 0.1 // Smooth the line
+              }, {
+                label: 'PBFT', // Second dataset
+                data: [191, 150, 95, 55, 38], // Data for the second dataset
+                borderColor: '#FF5733', // Line color
+                backgroundColor: 'rgba(255, 87, 51, 0.5)', // Fill color with transparency
+                tension: 0.1 // Smooth the line
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: false, // Start the y-axis from the lowest value in the dataset
+                  title: {
+                    display: true,
+                    text: 'Throughput (KTPS)'
+                  }
+                },
+                x: {
+                  title: {
+                    display: true,
+                    text: 'Number of Replicas'
+                  }
+                }
+              },
+              plugins: {
+                legend: {
+                  position: 'top'
+                }
+              }
+            }
+          });
+        });
+    </script>          
 </body>
 
 </html>
