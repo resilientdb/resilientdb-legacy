@@ -288,7 +288,7 @@
                                 <div class="single-chart">
                                     <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".7">With GeoBFT Global Consensus in 2019</h3>
                                     <div class="chart animated" data-animate="fadeInUp" data-delay="0.8">
-                                        <img src="images/dark/f-dark.png" alt="chart">
+                                        <canvas id="chart4" width="450" height="300"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -1976,7 +1976,53 @@
             }
           });
         });
-    </script>          
+    </script>     
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          var ctx = document.getElementById('chart4').getContext('2d');
+          var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+              labels: ["1", "2", "3", "4", "5", "6"], // X-axis categories
+              datasets: [{
+                label: 'ResilientDB', // First dataset
+                data: [10, 40, 42, 48, 52, 53], // Data for the first dataset
+                borderColor: '#59b4a9', // Line color
+                backgroundColor: 'rgba(89, 180, 169, 0.5)', // Fill color with transparency
+                tension: 0.1 // Smooth the line
+              }, {
+                label: 'PBFT', // Second dataset
+                data: [34, 33, 30, 17, 16, 15], // Data for the second dataset
+                borderColor: '#FF5733', // Line color
+                backgroundColor: 'rgba(255, 87, 51, 0.5)', // Fill color with transparency
+                tension: 0.1 // Smooth the line
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: false, // Start the y-axis from the lowest value in the dataset
+                  title: {
+                    display: true,
+                    text: 'Throughput (KTPS)'
+                  }
+                },
+                x: {
+                  title: {
+                    display: true,
+                    text: 'Number of Clusters (Regions)'
+                  }
+                }
+              },
+              plugins: {
+                legend: {
+                  position: 'top'
+                }
+              }
+            }
+          });
+        });
+        </script>             
 </body>
 
 </html>
