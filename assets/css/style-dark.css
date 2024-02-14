@@ -7835,5 +7835,9 @@ ul.progress-info { display: flex; justify-content: space-between; }
   color: #a2b4d2;
   font-size: 15px;
 }
+
+.features {
+  color: #a2b4d2;
+}
 /* END @iO */
 /* END @iO */
