@@ -7839,5 +7839,29 @@ ul.progress-info { display: flex; justify-content: space-between; }
 .features {
   color: #a2b4d2;
 }
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 600px; /* Adjusted to fit three items */
+  margin: auto;
+  height: 150px;
+}
+
+.stat {
+  flex-basis: calc(33.333% - 10px); /* Set to a third for three items in a row */
+  margin-bottom: 20px; /* Space between rows */
+}
+
+.number {
+  font-size: 14px; /* Larger number size, adjust as needed */
+  font-weight: bold; /* Optional: if you want the numbers to be bold */
+}
+
+.label {
+  font-size: 14px; /* Label size, adjust as needed */
+}
 /* END @iO */
 /* END @iO */
