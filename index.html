@@ -276,6 +276,44 @@
                         <div class="row justify-content-center gutter-vr-40px">
                             <div class="col-md-6 col-mb-8">
                                 <div class="single-chart">
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".1">With Concurrent Consensus Revisited in 2023</h3>
+                                    <div class="stats-container" style="max-width: 400px; margin: auto;">
+                                        <div class="stat">
+                                            <div class="number">2176961</div>
+                                            <div class="label">Resilient TPS</div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="number">4.1 seconds</div>
+                                            <div class="label">Resilient Latency</div>
+                                        </div>
+                                    </div>
+                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".2"> 
+                                        <canvas id="chart5" width="450" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-mb-8">
+                                <div class="single-chart">
+                                    <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".3">With Concurrent Consensus Revisited in 2023</h3>
+                                    <div class="stats-container" style="max-width: 400px; margin: auto;">
+                                        <div class="stat">
+                                            <div class="number">2265541</div>
+                                            <div class="label">Resilient TPS</div>
+                                        </div>
+                                        <div class="stat">
+                                            <div class="number">6.4 seconds</div>
+                                            <div class="label">Resilient Latency</div>
+                                        </div>
+                                    </div>
+                                    <div class="chart animated" data-animate="fadeInUp" data-delay=".4">
+                                        <canvas id="chart6" width="450" height="300"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center gutter-vr-40px">
+                            <div class="col-md-6 col-mb-8">
+                                <div class="single-chart">
                                     <h3 class="mgb-l text-center title-lg animated" data-animate="fadeInUp" data-delay=".1">with Power-of-Collaboration Consensus in 2022</h3>
                                     <div class="stats-container" style="max-width: 400px; margin: auto;">
                                         <div class="stat">
@@ -679,6 +717,19 @@
                                     <span class="team-position">Developer</span>
                                     <ul class="team-social team-social-s2">
                                         <li><a href="https://www.linkedin.com/in/haskell-macaraig-79aaba230" target="_blank"><em class="fab fa-linkedin-in"></em></a></li>
+                                    </ul>
+                                </div>
+                            </div><!-- .col -->
+                            <div class="col-lg-3 col-mb-6">
+                                <div class="team team-s3 team-s3-alt animated" data-animate="fadeInUp" data-delay=".6">
+                                    <div class="team-photo round-full team-photo-bg">
+                                        <a href="https://www.linkedin.com/in/weichenzhang/" class="team-show" data-overlay="bg-theme-grad-alternet" target="_blank"></a>
+                                        <img src="images/team/weichen.jpeg" alt="team" class="round-full">
+                                    </div>
+                                    <h5 class="team-name title title-sm">Weichen Zhang</h5>
+                                    <span class="team-position">Full-Stack Developer</span>
+                                    <ul class="team-social team-social-s2">
+                                        <li><a href="https://www.linkedin.com/in/weichenzhang/" target="_blank"><em class="fab fa-linkedin-in"></em></a></li>
                                     </ul>
                                 </div>
                             </div><!-- .col -->
@@ -1785,6 +1836,132 @@
             }
           });
         });
+        </script> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('chart5').getContext('2d');
+    
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                labels: ["16", "32", "64", "128"],
+                datasets: [{
+                    label: 'Throughput',
+                    yAxisID: 'y-throughput',
+                    backgroundColor: 'rgb(89, 180, 169)',
+                    borderColor: 'rgb(89, 180, 169)',
+                    data: [5768104, 5225173.655, 3425058.836, 2176961.564],
+                    fill: false,
+                }, {
+                    label: 'Latency',
+                    yAxisID: 'y-latency',
+                    backgroundColor: 'rgb(255, 87, 51)',
+                    borderColor: 'rgb(255, 87, 51)',
+                    data: [0.0470566524, 0.4063441034, 1.345684984, 4.106499498],
+                    fill: false,
+                }]
+                },
+                options: {
+                scales: {
+                    'y-throughput': {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                    title: {
+                        display: true,
+                        text: 'Throughput (KTPS)'
+                    }
+                    },
+                    'y-latency': {
+                    type: 'linear',
+                    display: true,
+                    position: 'right',
+                    title: {
+                        display: true,
+                        text: 'Latency (Seconds)'
+                    },
+                    grid: {
+                        drawOnChartArea: false,
+                    },
+                    },
+                    x: {
+                    title: {
+                        display: true,
+                        text: 'Number of Replicas'
+                    }
+                    }
+                },
+                plugins: {
+                    legend: {
+                    position: 'top',
+                    }
+                }
+                }
+            });
+            });
+        </script>      
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            var ctx = document.getElementById('chart6').getContext('2d');
+    
+            var chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                labels: ["1", "100", "200", "400", "600", "800", "1000"],
+                datasets: [{
+                    label: 'Throughput',
+                    yAxisID: 'y-throughput',
+                    backgroundColor: 'rgb(89, 180, 169)',
+                    borderColor: 'rgb(89, 180, 169)',
+                    data: [8078.8014, 458116.2703, 806518.0876, 1758653.427, 2176961.564, 2179059.153, 2265541.534],
+                    fill: false,
+                }, {
+                    label: 'Latency',
+                    yAxisID: 'y-latency',
+                    backgroundColor: 'rgb(255, 87, 51)',
+                    borderColor: 'rgb(255, 87, 51)',
+                    data: [1.88241215, 2.218035842, 3.040727589, 3.735271081, 4.106499498, 5.580073744, 6.418122143],
+                    fill: false,
+                }]
+                },
+                options: {
+                scales: {
+                    'y-throughput': {
+                    type: 'linear',
+                    display: true,
+                    position: 'left',
+                    title: {
+                        display: true,
+                        text: 'Throughput (KTPS)'
+                    }
+                    },
+                    'y-latency': {
+                    type: 'linear',
+                    display: true,
+                    position: 'right',
+                    title: {
+                        display: true,
+                        text: 'Latency (Seconds)'
+                    },
+                    grid: {
+                        drawOnChartArea: false,
+                    },
+                    },
+                    x: {
+                    title: {
+                        display: true,
+                        text: 'Batch Size'
+                    }
+                    }
+                },
+                plugins: {
+                    legend: {
+                    position: 'top',
+                    }
+                }
+                }
+            });
+            });
         </script>             
 </body>
 
