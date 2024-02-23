@@ -24,7 +24,7 @@
 						<a href="https://github.com/resilientdb/resilientdb"> Github </a>
 					</li>
 					<li>
-						<a href="https://legacy.resilientdb.com"> Legacy ResilientDB </a>
+						<a href="https://original.resilientdb.com"> Original ResilientDB </a>
 					</li>
 				</ul>
 			</div>
